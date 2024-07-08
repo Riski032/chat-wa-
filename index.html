@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat to WhatsApp</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            width: 60%;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+        }
+        .user {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border: 1px solid #ddd;
+            margin-bottom: 5px;
+            border-radius: 5px;
+        }
+        .user:nth-child(odd) {
+            background-color: #f9f9f9;
+        }
+        .user:nth-child(even) {
+            background-color: #e9e9e9;
+        }
+        .user button {
+            background-color: #25d366;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .user button:hover {
+            background-color: #1ebe57;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Chat to WhatsApp</h1>
+        <div class="user">
+            <span>Sukandar</span>
+            <button onclick="sendWhatsAppMessage('085200202712')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Warsiti</span>
+            <button onclick="sendWhatsAppMessage('082328268810')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Daimah</span>
+            <button onclick="sendWhatsAppMessage('085312662915')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Rodiyah</span>
+            <button onclick="sendWhatsAppMessage('081219166993')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Juriyah</span>
+            <button onclick="sendWhatsAppMessage('082138357065')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Kasri</span>
+            <button onclick="sendWhatsAppMessage('083895533415')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Rosilah</span>
+            <button onclick="sendWhatsAppMessage('087745514462')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Nur Khayati</span>
+            <button onclick="sendWhatsAppMessage('081818842084')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Nita Tri Utami</span>
+            <button onclick="sendWhatsAppMessage('083123444275')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Nofia Septi Wulandari</span>
+            <button onclick="sendWhatsAppMessage('082314540048')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Sulastri</span>
+            <button onclick="sendWhatsAppMessage('081316578488')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Dewi Sulistyanti</span>
+            <button onclick="sendWhatsAppMessage('081646986951')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Warsiti</span>
+            <button onclick="sendWhatsAppMessage('082325696767')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Suprapti</span>
+            <button onclick="sendWhatsAppMessage('085225226664')">Chat</button>
+        </div>
+        <div class="user">
+            <span>meliyan ristiyanti</span>
+            <button onclick="sendWhatsAppMessage('083832311481')">Chat</button>
+        </div>
+        <div class="user">
+            <span>sahrotun</span>
+            <button onclick="sendWhatsAppMessage('081229210214')">Chat</button>
+        </div>
+        <div class="user">
+            <span>jolekha M</span>
+            <button onclick="sendWhatsAppMessage('081390356340')">Chat</button>
+        </div>
+        <div class="user">
+            <span>siska maylinda</span>
+            <button onclick="sendWhatsAppMessage('085229526855')">Chat</button>
+        </div>
+        <div class="user">
+            <span>sri rohayati</span>
+            <button onclick="sendWhatsAppMessage('082220419951')">Chat</button>
+        </div>
+        <div class="user">
+            <span>rumyati</span>
+            <button onclick="sendWhatsAppMessage('085225436024')">Chat</button>
+        </div>
+        <div class="user">
+            <span>umyati</span>
+            <button onclick="sendWhatsAppMessage('085998021745')">Chat</button>
+        </div>
+        <div class="user">
+            <span>tarkunah</span>
+            <button onclick="sendWhatsAppMessage('085848301002')">Chat</button>
+        </div>
+        <div class="user">
+            <span>solikha</span>
+            <button onclick="sendWhatsAppMessage('0882005632504')">Chat</button>
+        </div>
+        <div class="user">
+            <span>sri nur latifah</span>
+            <button onclick="sendWhatsAppMessage('082322343824')">Chat</button>
+        </div>
+        <div class="user">
+            <span>Nur muhimatul adzimah</span>
+            <button onclick="sendWhatsAppMessage('085694720070')">Chat</button>
+        </div>
+        <div class="user">
+            <span>zaezatun nihayati</span>
+            <button onclick="sendWhatsAppMessage('088983879934')">Chat</button>
+        </div>
+        <div class="user">
+            <span>dimas arrohman</span>
+            <button onclick="sendWhatsAppMessage('082138819322')">Chat</button>
+        </div>
+        <div class="user">
+            <span>wahidi</span>
+            <button onclick="sendWhatsAppMessage('0882007003534')">Chat</button>
+        </div>
+        <div class="user">
+            <span>moch bagus putra wijaya</span>
+            <button onclick="sendWhatsAppMessage('087884553379')">Chat</button>
+        </div>
+        <div class="user">
+            <span>moch galih candra wijaya</span>
+            <button onclick="sendWhatsAppMessage('081232661355')">Chat</button>
+        </div>
+    </div>
+    <script>
+        function sendWhatsAppMessage(number) {
+            const message = "";
+            const url = `https://api.whatsapp.com/send?phone=${number}&text=${encodeURIComponent(message)}`;
+            window.open(url, '_blank');
+        }
+    </script>
+</body>
+</html>
